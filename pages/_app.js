@@ -7,6 +7,7 @@ import NProgress from 'nprogress';
 import '../public/styles/nprogress.css';
 import { Toaster } from 'react-hot-toast';
 import Script from 'next/script';
+import Meta from "@/components/Meta";
 
 export default function App({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(false);
@@ -36,6 +37,7 @@ export default function App({ Component, pageProps }) {
   return(
     <>
     <NavBar/>
+    <Meta path={router.pathname}/>
     <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-WYTYXQXVK6`} />
     <Script strategy="lazyOnload">
                 {`
