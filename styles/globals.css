@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   z-index: 1;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -59,10 +60,3 @@ img{
     color-scheme: dark;
   }
 } */
-
-.float_footer_active{
-  /* background-color: red; */
-  border-radius: 45%;
-  transform: translateY(-25%);
-  transition-duration: .5s;
-}

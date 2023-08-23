@@ -1,10 +1,10 @@
 import Link from 'next/link'
-import MyHead from '../components/MyHead'
+import Meta from '/components/Meta'
 
 export default function Home() {
   return (
     <>
-      <MyHead
+      <Meta
         title="Home"
         description="Welcome to TypeFinance, where we help you to choose the best financing for you"
         image="https://typefinance.com/typefinance-dp.jpg"
