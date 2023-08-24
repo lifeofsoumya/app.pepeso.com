@@ -1,4 +1,4 @@
-import Login from "@/source/modules/pages/Login/Login";
+import Register from "@/source/modules/pages/Register/Register";
 import { getLocalStorage } from "@/source/services/helpers/localStorage";
 import { useState, useEffect } from "react";
 
@@ -11,7 +11,7 @@ export default function Index(){
         <>
             <section className="min-h-screen ">
                 <div className="">
-                    <Login/>
+                    <Register/>
                 </div>
             </section>
         </>
