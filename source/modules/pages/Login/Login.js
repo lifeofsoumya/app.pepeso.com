@@ -44,11 +44,11 @@ const Login = () => {
               </div>
               <div className="">
                   <form onSubmit={handleLogin} className="flex flex-col py-3 z-10">
-                      <span className="login-email flex flex-row border-1 border-gray-100 bg-white text-black shadow-lg p-2 rounded-lg mb-4">
+                      <span className="login-email flex flex-row border border-gray-700 bg-white text-black shadow-md p-2 rounded-lg mb-4">
                         <img className='w-6' src="/svg/email.svg" style={{marginRight: '5px'}}/>
                         <input onChange={e=>setEmail(e.target.value)} value={email} id="email" className="w-full focus:outline-none autofocus pl-4" type="email" placeholder='Email ID' spellCheck="false" required/>
                       </span>
-                      <input onChange={e=>setPassword(e.target.value)} value={password} id="password" className="border-1 border-gray-100 bg-white text-black shadow-lg p-2 pl-3 rounded-lg focus:outline-none autofocus mb-4" type="password" placeholder='Enter a password' required/>
+                      <input onChange={e=>setPassword(e.target.value)} value={password} id="password" className="border border-gray-700 bg-white text-black shadow-lg p-2 pl-3 rounded-lg focus:outline-none autofocus mb-4" type="password" placeholder='Enter a password' required/>
                       <input className="bg-indigo-600 text-white p-2 rounded-lg cursor-pointer" type="submit" value="Login" />
                   </form>
                   <p className='text-center text-sm pb-2'>or</p>
