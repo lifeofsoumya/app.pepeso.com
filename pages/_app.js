@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Footer from "../components/Footer";
 import NavBar from "../components/Navbar";
+import Layout from "@/components/Layout";
 import NProgress from 'nprogress';
 import '../public/styles/nprogress.css';
 import { Toaster } from 'react-hot-toast';
@@ -36,7 +37,6 @@ export default function App({ Component, pageProps }) {
 
   return(
     <>
-    <NavBar/>
     <Meta path={router.pathname}/>
     <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-WYTYXQXVK6`} />
     <Script strategy="lazyOnload">
@@ -50,9 +50,10 @@ export default function App({ Component, pageProps }) {
                 `}
     </Script>
     <Toaster/>
-    <Component {...pageProps} />
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
     {isLoading && <div className="nprogress-custom-parent"><div className="nprogress-custom-bar"/></div>}
-    <Footer/>
 
     </>
   ) 
