@@ -1,6 +1,11 @@
 .tabs {
     display: flex;
+    gap: 4px;
     margin-bottom: 10px;
+    background-color: #f1f1f1;
+    width: fit-content;
+    padding: 4px;
+    border-radius: 8px;
   }
   
   .tab {
@@ -8,10 +13,11 @@
     background-color: #f0f0f0;
     cursor: pointer;
     transition: background-color 0.3s;
+    border-radius: 7px;
   }
   
   .tab.active {
-    background-color: #3498db;
+    background-color: #201323;
     color: white;
   }
   
