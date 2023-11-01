@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import apiBaseURL from '@/source/configs/apiBases';
 
 const Register = () => {
 
@@ -11,7 +12,7 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:8080/api/register`, {
+    fetch(`${apiBaseURL("packEnd")}/api/register`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

@@ -6,4 +6,4 @@ let apiBaseURL = (name) =>{
     }[name]
 }
 
-export {apiBaseURL}
+export default apiBaseURL
